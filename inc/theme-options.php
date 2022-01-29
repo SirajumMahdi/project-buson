@@ -208,7 +208,6 @@ $section = array(
 	'desc'  => __( 'General field for header & footer.', 'buson' ),
 	'icon'  => 'el el-home',
 );
-
 Redux::set_section( $opt_name, $section );
 
 $section = array(
@@ -253,7 +252,6 @@ $section = array(
 		),
 	),
 );
-
 Redux::set_section( $opt_name, $section );
 
 $section = array(
@@ -262,6 +260,12 @@ $section = array(
 	'id'         => 'footer-info',
 	'subsection' => true,
 	'fields'     => array(
+        array(
+            'id'       => 'footer-logo',
+            'type'     => 'media', 
+            'url'      => false,
+            'title'    => esc_html__('Footer Logo', 'buson'),           
+        ),
 		array(
 			'id'       => 'footer-desc',
 			'type'     => 'textarea',
@@ -314,8 +318,8 @@ $section = array(
 		),
 	),
 );
-
 Redux::set_section( $opt_name, $section );
+
 $section = array(
 	'title'      => esc_html__( 'Contact', 'buson' ),
 	'desc'       => esc_html__( 'Set Your Contact information.', 'buson' ),
@@ -354,7 +358,92 @@ $section = array(
         ),
 	),
 );
+Redux::set_section( $opt_name, $section );
 
+$section = array(
+	'title'      => esc_html__( 'About Us', 'buson' ),
+	'desc'       => esc_html__( 'Set Your About information.', 'buson' ),
+	'id'         => 'about',
+	'subsection' => true,
+	'fields'     => array(
+        array(
+            'id'       => 'trusted-img',
+            'type'     => 'media', 
+            'url'      => false,
+            'title'    => esc_html__('Trusted image', 'buson'),           
+        ),
+        array(
+            'id'       => 'trusted-title',
+            'type'     => 'text',
+            'title'    => esc_html__( 'We Are Trusted Title', 'buson' ),
+        ),
+        array(
+            'id'       => 'trusted-text',
+            'type'     => 'textarea',
+            'title'    => esc_html__( 'We Are Trusted Text', 'buson' ),
+        ),
+        array(
+            'id'       => 'trusted-btn-text',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Button Text', 'buson' ),
+        ),
+        array(
+            'id'       => 'trusted-btn-url',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Button url', 'buson' ),
+        ),
+	),
+);
+Redux::set_section( $opt_name, $section );
+
+$section = array(
+	'title'      => esc_html__( 'Completed Cases', 'buson' ),
+	'desc'       => esc_html__( 'Set Your Completed Cases information.', 'buson' ),
+	'id'         => 'cases',
+	'subsection' => true,
+	'fields'     => array(
+        array(
+            'id'       => 'cases-title',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Completed Cases Title', 'buson' ),
+        ),
+        array(
+            'id'       => 'cases-text',
+            'type'     => 'textarea',
+            'title'    => esc_html__( 'Completed Cases Text', 'buson' ),
+        ),
+        array(
+            'id'       => 'cases-btn-text',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Button Text', 'buson' ),
+        ),
+        array(
+            'id'       => 'cases-btn-url',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Button url', 'buson' ),
+        ),
+	),
+);
+Redux::set_section( $opt_name, $section );
+
+$section = array(
+	'title'      => esc_html__( 'Callback Request', 'buson' ),
+	'desc'       => esc_html__( 'Set Your Callback Request information.', 'buson' ),
+	'id'         => 'callback',
+	'subsection' => true,
+	'fields'     => array(
+        array(
+            'id'       => 'callback-title',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Callback Title Text', 'buson' ),
+        ),
+        array(
+            'id'       => 'callback-text',
+            'type'     => 'text',
+            'title'    => esc_html__( 'Callback Text Content', 'buson' ),
+        ),
+	),
+);
 Redux::set_section( $opt_name, $section );
 
 /*

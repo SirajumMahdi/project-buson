@@ -10,8 +10,7 @@
                             <!-- logo -->
                             <div class="footer-logo">
                                 <a href="<?php echo site_url();?>"><img
-                                        src="<?php echo get_template_directory_uri();?>/assets/img/logo/logo2_footer.png"
-                                        alt=""></a>
+                                        src="<?php echo $buson_options['footer-logo']['url']; ?>" alt=""></a>
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">

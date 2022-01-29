@@ -1,16 +1,14 @@
+<?php  global $buson_options; ?>
 <div class="completed-cases section-padding3">
     <div class="container">
         <div class="row">
             <!-- slider Heading -->
             <div class="col-xl-4 col-lg-4 col-md-8">
                 <div class="single-cases-info mb-30">
-                    <h3>Completed Cases</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna ali
-                        quUt enim ad minim veniam.
-                        quis nostrud exercitation ullamco laboris
-                        nierci si ut.</p>
-                    <a href="gallery.html" class="border-btn border-btn2">See more</a>
+                    <h3><?php echo $buson_options['cases-title']; ?></h3>
+                    <p><?php echo $buson_options['cases-text']; ?></p>
+                    <a href="<?php echo $buson_options['cases-btn-url']; ?>"
+                        class="border-btn border-btn2"><?php echo $buson_options['cases-btn-text']; ?></a>
                 </div>
             </div>
             <!-- OwL -->

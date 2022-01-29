@@ -350,3 +350,16 @@ function buson_case_category_tax() {
 
 }
 add_action( 'init', 'buson_case_category_tax' );
+
+function buson_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Main Sidebar', 'buson' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Widgets in this area will be shown on Blog and search page.', 'buson' ),
+        'before_widget' => '<aside class="single_sidebar_widget search_widget">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'buson_widgets_init' );

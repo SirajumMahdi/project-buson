@@ -505,27 +505,7 @@ get_header(); ?>
 <!-- ================ contact section end ================= -->
 
 <!-- Request Back Start -->
-<div class="request-back-area section-padding30">
-    <div class="container">
-        <div class="row d-flex justify-content-between">
-            <div class="col-xl-4 col-lg-5 col-md-5">
-                <div class="request-content">
-                    <h3>Request for Call Back</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore,</p>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-7 col-md-7">
-                <!-- Contact form Start -->
-                <div class="form-wrapper">
-                    <form id="contact-form" action="#" method="POST">
-                        <?php echo do_shortcode('[contact-form-7 id="142" title="Untitled"]')?>
-                    </form>
-                </div>
-            </div> <!-- Contact form End -->
-        </div>
-    </div>
-</div>
+<?php get_template_part( 'template-parts/section/requestback' ); ?>
 <!-- Request Back End -->
 
 <?php get_footer(); ?>
